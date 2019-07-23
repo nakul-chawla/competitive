@@ -32,18 +32,18 @@ class ransom{
 
     }
     public static void main(String args[]){
-        String[] a=new String();
-        String[] b = new String();
+        String[] a={};
+        String[] b={};
         Scanner sc =new Scanner(System.in);
 
         for(int i=0;i<2;i++){
             System.out.println("Enter size of string");
             int n=sc.nextInt();
             for(int j=0;j<n;j++){
-                if(i=0){
+                if(i==0){
                     a[j]=sc.nextLine();
                 }
-                if(i=1){
+                if(i==1){
                     b[j]=sc.nextLine();
                 }
             }
