@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Scanner;
 
 class ransom{
     static checkMagazine(String[] a,String[] b){
@@ -31,12 +32,23 @@ class ransom{
 
     }
     public static void main(String args[]){
-        String a=new String();
-        String b = new String();
+        String[] a=new String();
+        String[] b = new String();
         Scanner sc =new Scanner(System.in);
-        System.out.println("Enter two strings");
-        a=nextLine();
-        b=nextLine();
+
+        for(int i=0;i<2;i++){
+            System.out.println("Enter size of string");
+            int n=sc.nextInt();
+            for(int j=0;j<n;j++){
+                if(i=0){
+                    a[j]=sc.nextLine();
+                }
+                if(i=1){
+                    b[j]=sc.nextLine();
+                }
+            }
+        }
+
         checkMagazine(a,b);
     }
 }
