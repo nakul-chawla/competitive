@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 class ransom{
-    static checkMagazine(String[] a,String[] b){
+    static void checkMagazine(String[] a,String[] b){
         HashMap<String,Integer> hm = new HashMap<>();
         int y=0;
         for(int i=0;i<a.length;i++){
